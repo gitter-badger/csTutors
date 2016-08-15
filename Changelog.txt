@@ -1,0 +1,7 @@
+[= CHANGELOG FOR csTutors =]
+
+[== Version 0.0.1 ==]
+* GPL headers are added to comply with the recommendations of the Free Software Foundation
+* Some CSS issues are fixed
+* Changelog.txt is added
+* Version numeration is introduced

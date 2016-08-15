@@ -39,7 +39,7 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`AdminID`, `LastName`, `FirstName`, `Phone`, `Email`) VALUES
-(1, 'lastName', 'firstName', '000-000-0000', 'admin@smsu.edu'),
+(1, 'lastName', 'firstName', '000-000-0000', 'admin@smsu.edu');
 
 -- --------------------------------------------------------
 
@@ -122,7 +122,7 @@ CREATE TABLE `student` (
 --
 
 INSERT INTO `student` (`StarID`, `LastName`, `FirstName`, `Email`) VALUES
-(1, 'lastName', 'firstName', 'student@smsu.edu'),
+(1, 'lastName', 'firstName', 'student@smsu.edu');
 
 -- --------------------------------------------------------
 
@@ -143,7 +143,7 @@ CREATE TABLE `tutor` (
 --
 
 INSERT INTO `tutor` (`TutorID`, `LastName`, `FirstName`, `Phone`, `Email`) VALUES
-(4, 'lastName', 'firstName', '000-000-0000', 'tutor@smsu.edu'),
+(4, 'lastName', 'firstName', '000-000-0000', 'tutor@smsu.edu');
 
 -- --------------------------------------------------------
 
@@ -178,27 +178,27 @@ CREATE TABLE `tutor_rating` (
 --
 -- Structure for view `basicadminview`
 --
-DROP TABLE IF EXISTS `basicadminview`;
+-- DROP TABLE IF EXISTS `basicadminview`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `basicadminview`  AS  select `admin`.`AdminID` AS `AdminID`,`admin`.`LastName` AS `LastName`,`admin`.`FirstName` AS `FirstName`,`admin`.`Phone` AS `Phone`,`admin`.`Email` AS `Email` from `admin` ;
+-- CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `basicadminview`  AS  select `admin`.`AdminID` AS `AdminID`,`admin`.`LastName` AS `LastName`,`admin`.`FirstName` AS `FirstName`,`admin`.`Phone` AS `Phone`,`admin`.`Email` AS `Email` from `admin` ;
 
 -- --------------------------------------------------------
 
 --
 -- Structure for view `basicstudentview`
 --
-DROP TABLE IF EXISTS `basicstudentview`;
+-- DROP TABLE IF EXISTS `basicstudentview`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `basicstudentview`  AS  select `student`.`StarID` AS `StarID`,`student`.`FirstName` AS `FirstName`,`student`.`LastName` AS `LastName`,`student`.`Email` AS `Email` from `student` ;
+-- CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `basicstudentview`  AS  select `student`.`StarID` AS `StarID`,`student`.`FirstName` AS `FirstName`,`student`.`LastName` AS `LastName`,`student`.`Email` AS `Email` from `student` ;
 
 -- --------------------------------------------------------
 
 --
 -- Structure for view `tutornameemail`
 --
-DROP TABLE IF EXISTS `tutornameemail`;
+-- DROP TABLE IF EXISTS `tutornameemail`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `tutornameemail`  AS  select `tutor`.`TutorID` AS `TutorID`,`tutor`.`FirstName` AS `FirstName`,`tutor`.`LastName` AS `LastName`,`tutor`.`Phone` AS `Phone`,`tutor`.`Email` AS `Email` from `tutor` ;
+-- CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `tutornameemail`  AS  select `tutor`.`TutorID` AS `TutorID`,`tutor`.`FirstName` AS `FirstName`,`tutor`.`LastName` AS `LastName`,`tutor`.`Phone` AS `Phone`,`tutor`.`Email` AS `Email` from `tutor` ;
 
 --
 -- Indexes for dumped tables
