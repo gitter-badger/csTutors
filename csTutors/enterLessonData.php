@@ -85,6 +85,7 @@
 				</div> <!-- end #table -->
 
 				<?php
+				require('settings.php');
 				// Report all errors except E_NOTICE
 				error_reporting(E_ALL & ~E_NOTICE);
 				// Turn off error reporting
@@ -92,11 +93,11 @@
 				// Report runtime errors
 				//error_reporting(E_ERROR | E_WARNING | E_PARSE);
 
-				$user = 'root';
-				$pass = '';
-				$db = 'comptutor';
+				//$user = 'root';
+				//$pass = '';
+				//$db = 'comptutor';
 
-				$conn = new mysqli('localhost', $user, $pass, $db);
+				$conn = new mysqli($db_server, $db_user, $db_pass, $db_name);
 				if ($conn->connect_errno > 0)
 				{
 					echo "Failed to connect to Server. Please try again. ";

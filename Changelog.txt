@@ -1,11 +1,15 @@
 [= CHANGELOG FOR csTutors =]
 
+[== Version 0.0.3 ==]
+[*] CSS cleanup
+[*] settings.php added with sample database credentials
+
 [== Version 0.0.2 ==]
-* Number of nested directory levels reduced
-* Proper indentation
+[*] Number of nested directory levels reduced
+[*] Proper indentation
 
 [== Version 0.0.1 ==]
-* GPL headers are added to comply with the recommendations of the Free Software Foundation
-* Some CSS issues are fixed
-* Changelog.txt is added
-* Version numeration is introduced
+[*] GPL headers are added to comply with the recommendations of the Free Software Foundation
+[*] Some CSS issues are fixed
+[*] Changelog.txt is added
+[*] Version numeration is introduced
