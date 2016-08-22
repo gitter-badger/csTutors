@@ -1,5 +1,9 @@
 [= CHANGELOG FOR csTutors =]
 
+[== Development Version 0.0.4 ==]
+[*] Development versions switch
+[*] All source files are moved to the root directory (later most of them will be put into subdirectories)
+
 [== Version 0.0.3 ==]
 [*] CSS cleanup
 [*] settings.php added with sample database credentials
