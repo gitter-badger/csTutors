@@ -14,8 +14,9 @@
 
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
-*/ ?>
+*/
 
+print('
 <html>
 <head>
 	<title>On-Demand Tutors</title>
@@ -62,3 +63,4 @@
 </div> <!-- end #main --></div>
 </body>
 </html>
+');

@@ -1,22 +1,26 @@
-[= CHANGELOG FOR csTutors =]
+CHANGELOG for csTutors
 
-[== Development Version 0.0.5 ==]
-[*] HTML code in about_admin.php is replaced with one PHP print() call
+Development version 0.0.6
+- Changelog format change (in preparation for transitioning to .md)
+- HTML code in about_Login.php is replaced with one PHP print() call
 
-[== Development Version 0.0.4 ==]
-[*] Development versions switch
-[*] All source files are moved to the root directory (later most of them will be put into subdirectories)
+Development version 0.0.5
+- HTML code in about_admin.php is replaced with one PHP print() call
 
-[== Version 0.0.3 ==]
-[*] CSS cleanup
-[*] settings.php added with sample database credentials
+Development version 0.0.4
+- Development versions switch
+- All source files are moved to the root directory (later most of them will be put into subdirectories)
 
-[== Version 0.0.2 ==]
-[*] Number of nested directory levels reduced
-[*] Proper indentation
+Development version 0.0.3
+- CSS cleanup
+- settings.php added with sample database credentials
 
-[== Version 0.0.1 ==]
-[*] GPL headers are added to comply with the recommendations of the Free Software Foundation
-[*] Some CSS issues are fixed
-[*] Changelog.txt is added
-[*] Version numeration is introduced
+Development version 0.0.2
+- Number of nested directory levels reduced
+- Proper indentation
+
+Development version 0.0.1
+- GPL headers are added to comply with the recommendations of the Free Software Foundation
+- Some CSS issues are fixed
+- Changelog.txt is added
+- Version numeration is introduced
