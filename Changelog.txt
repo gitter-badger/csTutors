@@ -1,5 +1,10 @@
 CHANGELOG for csTutors
 
+Development version 0.0.7
+- HTML code in about_student.php is replaced with one PHP print() call
+- about_Login is changed into about_login
+- CSS code improvement in all.css
+
 Development version 0.0.6
 - Changelog format change (in preparation for transitioning to .md)
 - HTML code in about_Login.php is replaced with one PHP print() call
