@@ -1,5 +1,10 @@
 CHANGELOG for csTutors
 
+Development version 0.0.8
+- HTML code in about_tutor.php is replaced with one PHP print() call
+- Major CSS cleanup is done in all.css
+- LICENSE.txt and CHANGELOG.txt are now uppercase with .txt extensions
+
 Development version 0.0.7
 - HTML code in about_student.php is replaced with one PHP print() call
 - about_Login is changed into about_login
