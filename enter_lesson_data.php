@@ -14,8 +14,9 @@
 
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
-*/ ?>
+*/
 
+print('
 <html>
 <head>
 	<title>On-Demand Tutors</title>
@@ -48,7 +49,7 @@
 				</div>
 
 				<div class="table">
-					<form action='enter_lesson_data.php' method='POST' >
+					<form action="enter_lesson_data.php" method="POST" >ß
 						<table class="listing form" cellpadding="0" cellspacing="0">
 							<tbody>
 							<tr>
@@ -56,36 +57,36 @@
 							</tr>
 							<tr>
 								<td width="172"><strong>Student Name:</strong></td>
-								<td><input type="text" class="text" name='studentName'></td>
+								<td><input type="text" class="text" name="studentName"></td>
 							</tr>
 							<tr>
 								<td><strong>Course/Subject:</strong></td>
-								<td><input type="text" class="text" name='course'></td>
+								<td><input type="text" class="text" name="course"></td>
 							</tr>
 							<tr>
 								<td><strong>Semester:</strong></td>
-								<td><input type="text" class="text" name='semester'></td>
+								<td><input type="text" class="text" name="semester"></td>
 							</tr>
 							<tr>
 								<td><strong>Date:</strong></td>
-								<td><input type="text" class="text" name='lessonDate'></td>
+								<td><input type="text" class="text" name="lessonDate"></td>
 							</tr>
 							<tr>
 								<td><strong>Start Time:</strong></td>
-								<td><input type="text" class="text" name='startTime'></td>
+								<td><input type="text" class="text" name="startTime"></td>
 							</tr>
 							<tr>
 								<td><strong>End Time: </strong></td>
-								<td><input type="text" class="text" name='endTime'></td>
+								<td><input type="text" class="text" name="endTime"></td>
 							</tr>
 							</tbody>
 						</table>
-						<p><input type='submit' name = 'submit' value='Submit'></p>
+						<p><input type="submit" name="submit" value="Submit"></p>
 					</form>
 				</div> <!-- end #table -->
+');
 
-				<?php
-				require('settings.php');
+				require("settings.php");
 				// Report all errors except E_NOTICE
 				error_reporting(E_ALL & ~E_NOTICE);
 				// Turn off error reporting
@@ -93,28 +94,31 @@
 				// Report runtime errors
 				//error_reporting(E_ERROR | E_WARNING | E_PARSE);
 
-				//$user = 'root';
-				//$pass = '';
-				//$db = 'comptutor';
+				//$user = "root";
+				//$pass = "";
+				//$db = "comptutor";
 
 				$conn = new mysqli($db_server, $db_user, $db_pass, $db_name);
 				if ($conn->connect_errno > 0)
 				{
 					echo "Failed to connect to Server. Please try again. ";
-					die('Unable to connect to database [' . $db->connect_error . ']');
+					die("Unable to connect to database [' . $db->connect_error . ']");
 				}
 
-				if (isset($_POST['submit']))
+				if (isset($_POST["submit"]))
 				{
-					$role = $_POST['role'];
-					$sql1 = "INSERT INTO LESSON ('StudentName', 'Course', 'Semester', 'LessonDate', 'StartTime', 'EndTime') VALUES ('$_POST[studentName]', '$_POST[course]', '$_POST[semester]', '$_POST[lessonDate]', '$_POST[startTime]', '$_POST[endTime]')" ;
+					$role = $_POST["role"];
+					$sql1 = "INSERT INTO LESSON (\"StudentName\", \"Course\", \"Semester\", \"LessonDate\", \"StartTime\", \"EndTime\") VALUES (\"$_POST[studentName]\", \"$_POST[course]\", \"$_POST[semester]\", \"$_POST[lessonDate]\", \"$_POST[startTime]\", \"$_POST[endTime]\")" ;
 					if($sql1 && $_POST[studentName] != "" && $_POST[course]!="" && $_POST[semester]!="" && $_POST[lessonDate]!="" && $_POST[startTime]!="" && $_POST[endTime]!="")
 
 						echo "\nInformation entered!";
 					else
 						echo "\nError in updating! Please re-enter correct data";
 				}
-				?>
+
+
+print('
+
 			</div> <!-- end #center -->
 		</div>  <!-- end #middle -->
 		<div id="footer">
@@ -127,3 +131,6 @@
 </div> <!-- end #main --></div>
 </body>
 </html>
+');
+
+?>

@@ -1,5 +1,9 @@
 CHANGELOG for csTutors
 
+Development version 0.0.10
+- HTML code in enter_lesson_data.php is replaced with one PHP print() call
+- Style cleanup in enter_lesson_data.php
+
 Development version 0.0.9
 - adminDashboard.php is renamed into admin_dashboard.php
 - HTML code in admin_dashboard.php is replaced with one PHP print() call
