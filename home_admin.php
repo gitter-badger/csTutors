@@ -36,7 +36,7 @@
 			<ul id="top-navigation">
 				<h3>
 					<li><a href="about_admin.php">About Us</a></li>
-					<li><a href="adminDashboard.php">Dashboard</a></li>
+					<li><a href="admin_dashboard.php">Dashboard</a></li>
 					<li><a href="logout.php">Logout</a></li>
 				</h3>
 			</ul>

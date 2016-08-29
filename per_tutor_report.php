@@ -36,7 +36,7 @@
 			<ul id="top-navigation">
 				<h3>
 					<li><a href="about_admin.php">About Us</a></li>
-					<li><a href="adminDashboard.php">Dashboard</a></li>
+					<li><a href="admin_dashboard.php">Dashboard</a></li>
 					<li><a href="logout.php">Logout</a></li>
 				</h3>
 			</ul>
@@ -47,7 +47,7 @@
 					<br><br><h1> View Statistics Reports </h1></a>
 					<!--br><a href="perDayReport.php"><h1 style="font-size:15px"> Per Day </h1></a>
                     <br><a href="perCourseReport.php"> <h1 style="font-size:15px"> Per Course </h1> </a-->
-					<br><a href="perTutorReport.php"> <h1 style="font-size:15px"> Per Tutor </h1> </a>
+					<br><a href="per_tutor_report.php"> <h1 style="font-size:15px"> Per Tutor </h1> </a>
 					</h1>
 				</div>
 

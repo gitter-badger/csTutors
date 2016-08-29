@@ -1,5 +1,19 @@
 CHANGELOG for csTutors
 
+Development version 0.0.9
+- adminDashboard.php is renamed into admin_dashboard.php
+- HTML code in admin_dashboard.php is replaced with one PHP print() call
+- twoColFixLtHdr.css is renamed into two_col.css
+- perTutorReport.php is renamed into per_tutor_report.php
+- howItWorks.php is renamed into how_it_works.php
+- studentDashboard.php is renamed into student_dashboard.php
+- submitFeedback.php is renamed into submit_feedback.php
+- tutorDashboard.php is renamed into tutor_dashboard.php
+- searchTutor.php is renamed into search_tutor.php
+- viewStudentData.php is renamed into view_student_data.php
+- enterLessonData.php is renamed into enter_lesson_data.php
+- FileStructure.txt and WebStructure.txt are removed
+
 Development version 0.0.8
 - HTML code in about_tutor.php is replaced with one PHP print() call
 - Major CSS cleanup is done in all.css

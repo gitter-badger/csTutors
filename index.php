@@ -36,7 +36,7 @@
 			<ul id="top-navigation">
 				<h3>
 					<li><a href="about_Login.php">About Us</a></li>
-					<li><a href="howItWorks.php">How it Works</a></li>
+					<li><a href="how_it_works.php">How it Works</a></li>
 				</h3>
 			</ul>
 		</div>

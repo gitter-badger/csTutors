@@ -29,30 +29,27 @@
 	<div id="container">
 		<div id="header">
 			<div id="heading">
-				<a href="home_admin.php"><h1><center>
+				<a href="about_Login.php"><h1><center>
 							On-Demand Tutors
 						</center></h1></a>
 			</div>
 			<ul id="top-navigation">
 				<h3>
-					<li><a href="about.php">About Us</a></li>
-					<li><a href="adminDashboard.php">Dashboard</a></li>
-					<li><a href="logout.php">Logout</a></li>
+					<li><a href="about_Login.php">About Us</a></li>
+					<li><a href="how_it_works.php">How it Works</a></li>
+					<li><a href="index.php">Login</a></li>
 				</h3>
 			</ul>
 		</div>
 		<div id="middle">
 			<div id="center-column">
 				<div class="top-bar">
-					<br><br><h1> View Statistics Reports </h1></a>
-					<!--br><a href="perDayReport.php"><h1 style="font-size:15px"> Per Day </h1></a>
-                    <br><a href="perCourseReport.php"> <h1 style="font-size:15px"> Per Course </h1> </a-->
-					<br><a href="perTutorReport.php"> <h1 style="font-size:15px"> Per Tutor </h1> </a>
-					</h1>
+					<br><br><h1>Welcome to the On-Demand Tutoring System of<br />Southwest Minnesota State University </h1>
+					<br><h1> -----The documentation and video demo goes here---	</h1>
+					<p>
+						<br><br><br> Developed By, Department of Computer Science & Engineering <br><br>
+					</p>
 				</div>
-
-
-
 			</div>
 		</div>  <!-- end #middle -->
 		<div id="footer">

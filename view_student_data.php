@@ -36,7 +36,7 @@
             <ul id="top-navigation">
                 <h3>
                     <li><a href="about.php">About Us</a></li>
-                    <li><a href="tutorDashboard.php">Dashboard</a></li>
+                    <li><a href="tutor_dashboard.php">Dashboard</a></li>
                     <li><a href="logout.php">Logout</a></li>
                 </h3>
             </ul>

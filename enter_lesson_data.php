@@ -36,7 +36,7 @@
 			<ul id="top-navigation">
 				<h3>
 					<li><a href="about_tutor.php">About Us</a></li>
-					<li><a href="tutorDashboard.php">Dashboard</a></li>
+					<li><a href="tutor_dashboard.php">Dashboard</a></li>
 					<li><a href="logout.php">Logout</a></li>
 				</h3>
 			</ul>
@@ -48,7 +48,7 @@
 				</div>
 
 				<div class="table">
-					<form action='enterLessonData.php' method='POST' >
+					<form action='enter_lesson_data.php' method='POST' >
 						<table class="listing form" cellpadding="0" cellspacing="0">
 							<tbody>
 							<tr>

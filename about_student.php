@@ -22,7 +22,7 @@ print('
 	<title>On-Demand Tutors</title>
 	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
 	<link href="css/admin.css" rel="stylesheet" type="text/css">
-	<link href="css/twoColFixLtHdr.css" rel="stylesheet" type="text/css">
+	<link href="css/two_col.css" rel="stylesheet" type="text/css">
 
 </head>
 <body>
@@ -37,7 +37,7 @@ print('
 			<ul id="top-navigation">
 				<h3>
 					<li><a href="about_tutor.php">About Us</a></li>
-					<li><a href="tutorDashboard.php">Dashboard</a></li>
+					<li><a href=>Dashboard</a></li>
 					<li><a href="logout.php">Logout</a></li>
 				</h3>
 			</ul>

@@ -29,14 +29,14 @@
 	<div id="container">
 		<div id="header">
 			<div id="heading">
-				<a href="home_tutor.php"><h1><center>
+				<a href="home_student.php"><h1><center>
 							On-Demand Tutors
 						</center></h1></a>
 			</div>
 			<ul id="top-navigation">
 				<h3>
-					<li><a href="about_tutor.php">About Us</a></li>
-					<li><a href="tutorDashboard.php">Dashboard</a></li>
+					<li><a href="about_student.php">About Us</a></li>
+					<li><a href="student_dashboard.php">Dashboard</a></li>
 					<li><a href="logout.php">Logout</a></li>
 				</h3>
 			</ul>
@@ -44,11 +44,11 @@
 		<div id="middle">
 			<div id="center-column">
 				<div class="top-bar">
-					<br><br><a href="enterLessonData.php"><h1> Enter Lesson Information </h1></a>
-					<!--br><br><a href="viewStudentData.php"><h1> View My Students </h1></a-->
-				</div> <!-- end #top-bar -->
+					<br><br><a href="submit_feedback.php"><h1> Submit Feedback </h1></a>
+					<br><br><a href="search_tutor.php"><h1> Search for Tutors </h1></a>
 
-			</div> <!-- end #center -->
+				</div>
+			</div>
 		</div>  <!-- end #middle -->
 		<div id="footer">
 			<p>

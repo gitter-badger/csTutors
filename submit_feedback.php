@@ -36,7 +36,7 @@
 			<ul id="top-navigation">
 				<h3>
 					<li><a href="about_student.php">About Us</a></li>
-					<li><a href="studentDashboard.php">Dashboard</a></li>
+					<li><a href="student_dashboard.php">Dashboard</a></li>
 					<li><a href="logout.php">Logout</a></li>
 				</h3>
 			</ul>
@@ -44,20 +44,35 @@
 		<div id="middle">
 			<div id="center-column">
 				<div class="top-bar">
-					<h1>Search for Tutors </h1><br>
+					<h1>Submit Tutor Performance Feedback</h1><br>
 				</div>
 
 				<div class="table">
-					<form action='searchTutor.php' method='POST' >
+					<form action='submit_feedback.php' method='POST' >
 						<table class="listing form" cellpadding="0" cellspacing="0">
 							<tbody>
 							<tr>
-								<td><strong>Tutor Name:</strong></td>
-								<td><input type="text" class="text" name='st'></td>
+								<td width="172"><strong>Tutor Id:</strong></td>
+								<td><input type="text" class="text" name='tutorId'></td>
 							</tr>
 							<tr>
-								<td><strong>Rating: </strong></td>
-								<td><input type="text" class="text" name='et'></td>
+								<td><strong>Tutor First Name:</strong></td>
+								<td><input type="text" class="text" name='tutorName'></td>
+							</tr>
+							<tr>
+								<td><strong>Was helpful? </strong></td>
+								<td>
+									<div>Yes <input type='radio' name='helpful' value='Yes' /> </div>
+									<div>No <input type='radio' name='helpful' value='No' /> </div>
+								</td>
+							</tr>
+							<tr>
+								<td><strong>Rating</strong>(0 to 5):</td>
+								<td><input type="text" class="text" name='rating'></td>
+							</tr>
+							<tr>
+								<td><strong>Comments</strong><br>(max 500 char):</td>
+								<td><input type='textarea' name='feedbackComments' id='feedbackComments' style="width:400px; height:100px" /> </td>
 							</tr>
 							</tbody>
 						</table>
@@ -66,6 +81,12 @@
 				</div> <!-- end #table -->
 
 				<?php
+				// Report all errors except E_NOTICE
+				error_reporting(E_ALL & ~E_NOTICE);
+				// Turn off error reporting
+				//error_reporting(0);
+				// Report runtime errors
+				//error_reporting(E_ERROR | E_WARNING | E_PARSE);
 
 				$user = 'root';
 				$pass = '';
@@ -74,17 +95,18 @@
 				$conn = new mysqli('localhost', $user, $pass, $db);
 				if ($conn->connect_errno > 0)
 				{
-					echo "Failed to connect to MySQL: ";
+					echo "Failed to connect to Server. Please try again. ";
 					die('Unable to connect to database [' . $db->connect_error . ']');
 				}
 
-				if (isset($_GET['submit']))
+				if (isset($_POST['submit']))
 				{
-					$insert1 = "INSERT INTO schd (Day,Room,Course,Starttime, Endtime, IPadd, LED) VALUES ('$_GET[day]', '$_GET[room]', '$_GET[course]', '$_GET[st]', '$_GET[et]', '$_GET[ip]','$_GET[led]')" ;
-					$sql = mysqli_query($conn,$insert1);
-					$insert = mysqli_query($conn,"INSERT INTO status (Day,Room,Starttime,LEDno,Status) VALUES ('$_GET[day]', '$_GET[room]','$_GET[st]','$_GET[led]', 'OFF') " );
-					if($sql)
-						echo "\nSchedule Updated!";
+					$role = $_POST['role'];
+					$wasHelpful = $_POST['helpful'];
+					$sql1 = "INSERT INTO TUTOR_RATING ('TutorID', 'FirstName', 'WasHelpful', 'Rating', 'Comments') VALUES ('$_POST[tutorId]', '$_POST[tutorName]', '$wasHelpful', '$_POST[rating]', '$_POST[feedbackComments]')" ;
+					if($sql1 && $_POST[tutorId]!="" && $_POST[tutorName]!="" && $wasHelpful!="" && $_POST[rating]!="" )
+
+						echo "\nFeedback Recorded!";
 					else
 						echo "\nError in updating! Please re-enter correct data";
 				}
