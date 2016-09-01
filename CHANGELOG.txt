@@ -1,5 +1,8 @@
 CHANGELOG for csTutors
 
+Development version 0.0.12
+- HTML code in logout.php is replaced with one PHP print() call
+
 Development version 0.0.11
 - HTML code in home_admin.php is replaced with one PHP print() call
 - HTML code in home_student.php is replaced with one PHP print() call
