@@ -1,5 +1,7 @@
 # csTutors
 
+[![Join the chat at https://gitter.im/smsustem/csTutors](https://badges.gitter.im/smsustem/csTutors.svg)](https://gitter.im/smsustem/csTutors?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 A website designed to provide on-demand access to Computer Science tutors.
 
 
